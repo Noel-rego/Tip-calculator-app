@@ -21,10 +21,42 @@ main{
     width:690px;
     border-radius: 5%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between; 
     align-items: center;
     
     
+}
+.leftside{
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+    gap: 10p;
+}
+#bill, #noofpep{
+    width: 400px;
+}
+.tipdiv{
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+}
+.tip{
+    height: 39px;
+    width:100px ;
+
+    color:hsl(0, 100%, 100%) ;
+    background-color:hsl(183, 100%, 15%) ;
+    border-radius: 5%;
+    border:none;
+}
+.tipnoncolor{
+    height: 39px;
+    width:100px ;
+    color:hsl(186, 14%, 43%);
+    background-color: hsl(190, 17%, 93%);
+    border-radius: 5%;
+    border:none;
+
 }
 
 .rightside-Display{
