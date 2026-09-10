@@ -30,24 +30,29 @@ main{
     display: flex;
     flex-direction: column;
     margin-left: 32px;
-    gap: 10p;
+    gap: 13px;
 }
 #bill, #noofpep{
-    width: 400px;
+    width: 330px;
 }
 .tipdiv{
     display: flex;
     flex-wrap: wrap;
-    gap:30px;
+    gap:20px;
 }
 .tip{
     height: 39px;
-    width:100px ;
+    width:90px ;
 
     color:hsl(0, 100%, 100%) ;
     background-color:hsl(183, 100%, 15%) ;
     border-radius: 5%;
     border:none;
+    font-size: 18px;
+}
+.tip:hover{
+    background-color: hsl(174, 67%, 70%);
+    color: hsl(183, 91%, 13%);
 }
 .tipnoncolor{
     height: 39px;
@@ -62,7 +67,51 @@ main{
 .rightside-Display{
     background-color:hsl(183, 100%, 15%) ;
     height: 320px;
-    width: 40%;
+    width: 80%;
     border-radius: 5%;
     margin-right: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.tipamount,.totol{
+    display: flex;
+}
+.text{
+    font-size:12px ;
+    color:hsl(0, 100%, 100%) ;
+}
+.perp{
+    font-size:10px ;
+    color:hsl(184, 14%, 56%) ;
+}
+
+.totol{
+    margin-top: 25px;
+    margin-left: 0px;
+}
+.value{
+    margin-left: 80px;
+    font-size: 30px;
+    color:hsl(172, 67%, 45%) ;
+
+}
+#value2{
+    margin-left: 110px;
+}
+.reset{
+    margin-top: 25px;
+    height: 30px;
+    width: 250px;
+    border-radius: 5%;
+    border: none;
+    margin-top: 140px;
+    background-color: hsl(186, 46%, 29%);
+    color: hsl(185, 10%, 45%);
+}
+.reset:hover{
+    background-color: hsl(174, 63%, 84%);
+    color: hsl(183, 100%, 15%);
 }
