@@ -55,9 +55,11 @@ main{
     color: hsl(183, 91%, 13%);
 }
 .tipnoncolor{
+    text-align: center;
     height: 39px;
     width:100px ;
-    color:hsl(186, 14%, 43%);
+    font-size: 18px;
+    color:hsl(185, 85%, 8%);
     background-color: hsl(190, 17%, 93%);
     border-radius: 5%;
     border:none;
@@ -115,3 +117,26 @@ main{
     background-color: hsl(174, 63%, 84%);
     color: hsl(183, 100%, 15%);
 }
+
+
+
+
+
+
+
+
+
+/*later*/
+.reset.activated{
+    background-color: hsl(183, 80%, 61%);
+    color: hsl(183, 100%, 15%);
+
+}
+
+
+
+
+
+
+
+
