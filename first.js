@@ -1,8 +1,5 @@
-const fivetip=document.querySelector("#tip-5");
-const tentip=document.querySelector("#tip-10");
-const fifteentip=document.querySelector("#tip-15");
-const twentyfivetip=document.querySelector("#tip-25");
-const fiftytip=document.querySelector("#tip-50");
+const tips=document.querySelectorAll(".tip");
+console.log(tips);
 const customtip=document.querySelector("#custom");
 
 const bill=document.querySelector("#bill");
@@ -18,6 +15,32 @@ const getvalue=()=>{
     noofpepvalue=noofpep.value;
     console.log(billvalue,noofpepvalue);
 }
+
+
+
+
+
+
+// const tipperp=(getvalue)=>{
+//     tip=billvalue*()
+
+// }
+// const totolperp=()=>{
+
+// }
+
+
+
+
+tips.forEach((tip)=>{
+    tip.addEventListener("click",(e)=>{
+        console.log(e.target.dataset.tip);
+    });
+
+})
+
+    
+
 
 
 
