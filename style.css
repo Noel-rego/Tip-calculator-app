@@ -32,8 +32,20 @@ main{
     margin-left: 32px;
     gap: 13px;
 }
+.invisible{
+    display: flex;
+}
+.error{
+    display: none;
+    font-size: 12px;
+    margin-left: 60px;
+    margin-top: 5px;
+    color: red;
+}
 #bill, #noofpep{
     width: 330px;
+    font-size: 12px;
+    
 }
 .tipdiv{
     display: flex;
@@ -127,7 +139,7 @@ main{
 
 
 /*later*/
-.reset.activated{
+.reset.active-state{
     background-color: hsl(183, 80%, 61%);
     color: hsl(183, 100%, 15%);
 
