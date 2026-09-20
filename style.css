@@ -42,11 +42,16 @@ main{
     margin-top: 5px;
     color: red;
 }
+/* called when i wanna do this to some doc qery slector */
+.input-error:focus {
+    outline: 0.3px solid hsl(10, 100%, 50%);
+}
 #bill, #noofpep{
     width: 330px;
     font-size: 12px;
     
 }
+
 .tipdiv{
     display: flex;
     flex-wrap: wrap;
@@ -131,21 +136,147 @@ main{
 }
 
 
-
-
-
-
-
-
-
-/*later*/
-.reset.active-state{
-    background-color: hsl(183, 80%, 61%);
-    color: hsl(183, 100%, 15%);
-
+@media (max-width: 768px) {
+ 
+    main {
+        justify-content: flex-start;   /* stack from the top, not centered */
+        align-items: stretch;          /* children fill the full width */
+        padding-top: 40px;
+    }
+    .heading {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .heading h2 {
+        font-size: 24px;
+        letter-spacing: 0.4em;
+        padding-left: 0.4em;           /* balances the trailing letter-spacing so it looks centered */
+    }
+    .maindiv {
+        flex: 1;                       /* card stretches down to the bottom of the screen */
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        width: 100%;
+        height: auto;
+        padding: 32px 24px;
+        border-radius: 25px 25px 0 0;
+    }
+    .leftside {
+        margin: 0 8px 32px;            /* extra 8px each side: panel below is wider than inputs */
+        gap: 8px;
+    }
+    .leftside label {
+        font-size: 16px;
+        font-weight: 700;
+        color: hsl(186, 14%, 43%);
+    }
+    .leftside > label[for="tipvalue"] {
+        margin-top: 24px;
+    }
+    .invisible {
+        margin-top: 24px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .error {
+        margin: 0;
+        font-size: 14px;
+    }
+    /* bill + people inputs */
+    #bill,
+    #noofpep {
+        width: 100%;
+        height: 48px;
+        padding: 0 16px 0 44px;        /* left padding leaves room for the icon */
+        font-size: 24px;
+        font-weight: 700;
+        text-align: right;
+        color: hsl(183, 100%, 15%);
+        background-color: hsl(189, 41%, 97%);
+        border: none;
+        border-radius: 5px;
+        background-repeat: no-repeat;
+        background-position: 16px center;
+    }
+    #bill::placeholder,
+    #noofpep::placeholder {
+        color: hsl(184, 14%, 56%);
+    }
+    /* $ icon (change the placeholder in HTML to just "0") */
+    #bill {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='20'%3E%3Ctext x='0' y='17' font-size='20' font-family='monospace' fill='%239EBBBD'%3E$%3C/text%3E%3C/svg%3E");
+    }
+    /* person icon */
+    #noofpep {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='16' viewBox='0 0 13 16'%3E%3Ccircle cx='6.5' cy='4' r='3.5' fill='%239EBBBD'/%3E%3Cpath d='M0 15c0-3.5 2.5-6 6.5-6s6.5 2.5 6.5 6z' fill='%239EBBBD'/%3E%3C/svg%3E");
+    }
+    /* ---------- tip buttons: 2-column grid ---------- */
+    .tipdiv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+    .tip,
+    .tipnoncolor {
+        width: 100%;
+        height: 48px;
+        font-size: 24px;
+        font-weight: 700;
+        border-radius: 5px;
+    }
+ 
+    .tipnoncolor::placeholder {
+        color: hsl(186, 14%, 43%);
+    }
+    /* selected tip button (needs the small JS change below) */
+    .tip.active {
+        background-color: hsl(172, 67%, 45%);
+        color: hsl(183, 100%, 15%);
+    }
+    /* ---------- result panel ---------- */
+    .rightside-Display {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 32px 24px 24px;
+        border-radius: 15px;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+    .tipamount,
+    .totol {
+        justify-content: space-between;
+        align-items: center;
+    } 
+    .totol {
+        margin-top: 24px;
+    }
+    .text {
+        font-size: 16px;
+        font-weight: 700;
+    } 
+    .perp {
+        font-size: 13px;
+    }
+    /* #value2 needs an ID selector to beat your desktop margin-left: 110px */
+    .value,
+    #value2 {
+        margin-left: 0;
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .reset {
+        width: 100%;
+        height: 48px;
+        margin-top: 32px;              /* replaces the desktop 140px */
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 }
-
-
 
 
 
