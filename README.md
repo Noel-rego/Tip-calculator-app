@@ -6,7 +6,6 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -25,12 +24,6 @@ Users should be able to:
 - View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Calculate the correct tip and total cost of the bill per person
-
-### Screenshot
-
-![](./screenshot.jpg)
-
-<!-- Add your own screenshot here — right-click the page in your browser and use "Take a Screenshot", or a tool like FireShot. -->
 
 ### Links
 
@@ -101,5 +94,4 @@ Used `.toFixed(2)` to keep displayed tip and total amounts to two decimal places
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Noel rego](https://www.frontendmentor.io/home)
