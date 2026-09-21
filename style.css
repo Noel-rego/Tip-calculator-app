@@ -49,8 +49,15 @@ main{
 #bill, #noofpep{
     width: 330px;
     font-size: 12px;
+    background-repeat: no-repeat;
     
 }
+#bill {
+        background-image: url("icon-dollar.svg");
+}
+#noofpep {
+        background-image: url("icon-person.svg");
+} 
 
 .tipdiv{
     display: flex;
@@ -139,8 +146,8 @@ main{
 @media (max-width: 768px) {
  
     main {
-        justify-content: flex-start;   /* stack from the top, not centered */
-        align-items: stretch;          /* children fill the full width */
+        justify-content: flex-start;   
+        align-items: stretch;          
         padding-top: 40px;
     }
     .heading {
@@ -148,12 +155,11 @@ main{
         margin-bottom: 40px;
     }
     .heading h2 {
-        font-size: 24px;
-        letter-spacing: 0.4em;
-        padding-left: 0.4em;           /* balances the trailing letter-spacing so it looks centered */
+         font-size: 24px;
+         gap:0.4em;
+        padding-left: 0.4em;    
     }
     .maindiv {
-        flex: 1;                       /* card stretches down to the bottom of the screen */
         flex-direction: column;
         align-items: stretch;
         justify-content: flex-start;
@@ -163,7 +169,7 @@ main{
         border-radius: 25px 25px 0 0;
     }
     .leftside {
-        margin: 0 8px 32px;            /* extra 8px each side: panel below is wider than inputs */
+        margin: 0 8px 32px;           
         gap: 8px;
     }
     .leftside label {
@@ -171,9 +177,7 @@ main{
         font-weight: 700;
         color: hsl(186, 14%, 43%);
     }
-    .leftside > label[for="tipvalue"] {
-        margin-top: 24px;
-    }
+    
     .invisible {
         margin-top: 24px;
         justify-content: space-between;
@@ -183,12 +187,11 @@ main{
         margin: 0;
         font-size: 14px;
     }
-    /* bill + people inputs */
     #bill,
     #noofpep {
         width: 100%;
         height: 48px;
-        padding: 0 16px 0 44px;        /* left padding leaves room for the icon */
+        padding: 0 16px 0 44px;      
         font-size: 24px;
         font-weight: 700;
         text-align: right;
@@ -203,15 +206,6 @@ main{
     #noofpep::placeholder {
         color: hsl(184, 14%, 56%);
     }
-    /* $ icon (change the placeholder in HTML to just "0") */
-    #bill {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='20'%3E%3Ctext x='0' y='17' font-size='20' font-family='monospace' fill='%239EBBBD'%3E$%3C/text%3E%3C/svg%3E");
-    }
-    /* person icon */
-    #noofpep {
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='16' viewBox='0 0 13 16'%3E%3Ccircle cx='6.5' cy='4' r='3.5' fill='%239EBBBD'/%3E%3Cpath d='M0 15c0-3.5 2.5-6 6.5-6s6.5 2.5 6.5 6z' fill='%239EBBBD'/%3E%3C/svg%3E");
-    }
-    /* ---------- tip buttons: 2-column grid ---------- */
     .tipdiv {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -229,12 +223,10 @@ main{
     .tipnoncolor::placeholder {
         color: hsl(186, 14%, 43%);
     }
-    /* selected tip button (needs the small JS change below) */
     .tip.active {
         background-color: hsl(172, 67%, 45%);
         color: hsl(183, 100%, 15%);
     }
-    /* ---------- result panel ---------- */
     .rightside-Display {
         width: 100%;
         height: auto;
@@ -244,8 +236,7 @@ main{
         justify-content: flex-start;
         align-items: stretch;
     }
-    .tipamount,
-    .totol {
+    .tipamount,.totol {
         justify-content: space-between;
         align-items: center;
     } 
@@ -259,7 +250,6 @@ main{
     .perp {
         font-size: 13px;
     }
-    /* #value2 needs an ID selector to beat your desktop margin-left: 110px */
     .value,
     #value2 {
         margin-left: 0;
@@ -269,12 +259,10 @@ main{
     .reset {
         width: 100%;
         height: 48px;
-        margin-top: 32px;              /* replaces the desktop 140px */
+        margin-top: 32px;            
         font-size: 20px;
         font-weight: 700;
-        text-transform: uppercase;
         border-radius: 5px;
-        cursor: pointer;
     }
 }
 
