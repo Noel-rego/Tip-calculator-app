@@ -95,3 +95,91 @@ Used `.toFixed(2)` to keep displayed tip and total amounts to two decimal places
 ## Author
 
 - Frontend Mentor - [@Noel rego](https://www.frontendmentor.io/home)
+
+
+
+
+
+
+
+programme 1
+mkdir foldername
+cd foldername
+git init
+git branch -M master////////////
+echo "this is sample file" > file1.txt/////////////
+git add file.txt
+git commit -m "initisl commit"
+
+
+programme 2
+mkdir proj1
+cd proj1
+git init
+git branch -M master
+echo "this is sample file" > file1.txt
+git add file1.txt
+git commit -m "Initial commit"
+/////////////////////////////
+git branch featurebranch
+git checkout featurebranch//////////////to move among branches
+echo "this is a sample file in the branch" > file2.txt
+git add file2.txt
+git commit -m "adding new file to the branch"
+git checkout master
+git merge featurebranch///////to bring the featue branch to the master
+
+
+programme 3
+mkdir folder1
+cd folder1
+git init
+git branch -M master
+echo "this is sample text" > file1.txt
+git add file1.txt
+git commit -m "initial commit"
+git branch feature branch//////////we dont go to this branch and try add a file here,we are jsut creating a file here
+echo "tis  is sample file in the branch" > file2.txt///////this is in main itseld
+///////////////////////////////
+git stash////////weput the previous work on pause to go to the branch
+git checkout featurebranch//////// we gi here for name sake
+git checkout master///////come back
+git stast apply/////////and then finnaly apply whatever was kept in pause while we went to the feature branch
+
+
+programme 4
+////////after forking//////
+git clone https://github.com/Noel-rego/Hello-World.git
+cd Hello-World
+
+
+
+programme 5
+
+git config --global user.name "Noel-rego"//////////////////////////////
+git config --global user.email "noel@example.com"//////////////////////
+///////first clone
+git clone fajflda
+cd Hello-World
+///////////////////////////////////////////next create a file again
+git branch -M master
+git checkout master///////////jsut there for safety
+echo "this is sample file" > file1.txt
+git add file1.txt
+git commit -m "Initial commit"
+///////////commit some change in a new teaacher file in the Hello world fork
+git fetch origin/////////
+git rebase origin/main///////////OR origin/master
+
+
+
+programme6
+git branch featurebranch
+git checkout featurebranch
+echo "this is 2nd sample file" > file2.txt
+git add file2.txt
+git commit -m "adding a branch"
+git checkout master
+git merge --no-ff featurebranch -m "Merge feature branch into master"////////////////very imp to have this here
+
+
